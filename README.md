@@ -55,7 +55,7 @@ Before run the script I recommend you to make partition using partitioning softw
    ./ArchInstaller/install-step2.sh
    ```
    wait until install operation finish
-8. After instllation finish, type
+8. After installation finish, type
    ```
    exit
    ```
