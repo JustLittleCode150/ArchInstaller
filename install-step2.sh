@@ -65,10 +65,6 @@ curl -O https://arch.alerque.com/x86_64/yay-10.1.2-1-x86_64.pkg.tar.zst
 yes y | pacman -U yay-10.1.2-1-x86_64.pkg.tar.zst
 rm yay-10.1.2-1-x86_64.pkg.tar.zst
 
-# installing pamac and snap
-./ArchInstaller/add-on.sh
-echo -ne '\n' | pacman -Sy pamac-all snapd snapd-glib
-
 if [ $DESKTOP -eq '1' ]
 then
     # setup some runtime
