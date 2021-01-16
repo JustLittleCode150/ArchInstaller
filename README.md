@@ -1,4 +1,4 @@
-# Arch Linux Installer
+# <strong>Arch Linux Installer</strong>
 This is simple shell script to make easier of arch linux minimalist installation with GUI installed.
 
 ```
