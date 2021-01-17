@@ -70,7 +70,7 @@ echo "1.gnome"
 echo "2.xcfe"
 echo -e "3.kde\n"
 
-echo -e "choose you're desktop environment(1,2)? \c"
+echo -e "choose you're desktop environment(1,2,3)? \c"
 read -r DESKTOP
 
 if [ $DESKTOP -eq '1' ]
