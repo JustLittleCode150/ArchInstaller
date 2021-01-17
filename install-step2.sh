@@ -15,9 +15,10 @@ read -r USERNAME
 
 echo "Desktop environment:"
 echo "1.gnome"
-echo -e "2.xcfe\n"
+echo "2.xcfe"
+echo -ne "3.kde\n"
 
-echo -e "choose you're desktop environment(1,2)? \c"
+echo -e "choose you're desktop environment(1,2,3)? \c"
 read -r DESKTOP
 
 # setup keyboard layout 
