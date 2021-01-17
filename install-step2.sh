@@ -72,7 +72,7 @@ echo -ne 'y' | pacman -U ./Dependencies/ocs-url.pkg.tar.xz
 if [ $DESKTOP -eq '1' ]
 then
     # setup some runtime
-    yes y | pacman -Sy dialog dhcpcd wpa_supplicant networkmanager iwd bluez bluez-utils gnome-bluetooth gnome-control-center ttf-hanazono ttf-baekmuk
+    yes y | pacman -Sy dialog dhcpcd wpa_supplicant networkmanager iwd bluez bluez-utils gnome-bluetooth gnome-control-center ttf-hanazono ttf-baekmuk ttf-bitstream-vera
     systemctl stop dchcpcd
     systemctl disable dhcpcd
     systemctl start wpa_supplicant
