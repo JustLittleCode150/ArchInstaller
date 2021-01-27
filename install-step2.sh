@@ -69,6 +69,9 @@ rm yay-10.1.2-1-x86_64.pkg.tar.zst
 # installing ocs-url
 echo -ne 'y' | pacman -U ./Dependencies/ocs-url.pkg.tar.xz
 
+# installing some audio dependencies
+yes y | pacman -Sy alsa-utils lib32-alsa-plugins lib32-libpulse lib32-openal
+
 if [ $DESKTOP -eq '1' ]
 then
     # setup some runtime
