@@ -82,6 +82,9 @@ then
 elif [ $DESKTOP -eq '3' ]
 then
     echo -ne '\n \n \n \n \n \n \n \n \n' | ./ArchInstaller/Desktop/kde.sh
+elif [ $DESKTOP -eq '3' ]
+then
+    echo -ne '\n \n \n \n \n \n \n' | ./ArchInstaller/Desktop/cli.sh
 fi
 
 # generate fstab info to arch linux
