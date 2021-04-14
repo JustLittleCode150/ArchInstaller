@@ -16,7 +16,8 @@ read -r USERNAME
 echo "Desktop environment:"
 echo "1.gnome"
 echo "2.xcfe"
-echo -ne "3.kde\n"
+echo "3.kde"
+echo -ne "4.cli\n"
 
 echo -e "choose you're desktop environment(1,2,3)? \c"
 read -r DESKTOP
@@ -134,6 +135,23 @@ then
     # enable display manager
     systemctl start sddm
     systemctl enable sddm
+   
+elif [ $DESKTOP -eq '4' ]
+then
+    # setup some runtime
+    yes y | pacman -Sy dialog dhcpcd wpa_supplicant networkmanager iwd bluez bluez-utils 
+    systemctl stop dchcpcd
+    systemctl disable dhcpcd
+    systemctl start wpa_supplicant
+    systemctl enable wpa_supplicant
+    systemctl start NetworkManager
+    systemctl enable NetworkManager 
+    systemctl start iwd
+    systemctl enable iwd
+    systemctl start cups
+    systemctl enable cups
+    systemctl start bluetooth
+    systemctl enable bluetooth
 fi
 
 # all installation finish message 
